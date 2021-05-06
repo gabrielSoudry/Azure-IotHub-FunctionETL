@@ -11,5 +11,5 @@
       "dataType": "string"
     }
   ],
-  "scriptFile": "../dist/IoTHub_EventHub1/index.js"
+  "scriptFile": "../dist/IoTHub-ETL/index.js"
 }
