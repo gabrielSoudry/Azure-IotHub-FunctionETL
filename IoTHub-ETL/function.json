@@ -1,20 +1,15 @@
 {
   "bindings": [
     {
-      "type": "eventHubTrigger",
-      "name": "IoTHubMessagesRevpi",
-      "direction": "in",
-      "eventHubName": "iothub-test-001",
-      "connection": "AzureEventHubConnectionString",
-      "cardinality": "many",
-      "consumerGroup": "$Default",
-      "dataType": "string"
+      "type": "eventGridTrigger",
+      "name": "eventGridEventIotHub",
+      "direction": "in"
     },
     {
       "type": "cosmosDB",
       "name": "outputDocument",
       "databaseName": "automateRevpi2",
-      "collectionName": "automateRevpi2",
+      "collectionName": "automateRevpi5",
       "createIfNotExists": true,
       "connectionStringSetting": "CONNECTION_STRING_COSMOSDB",
       "partitionKey": "/automate",
